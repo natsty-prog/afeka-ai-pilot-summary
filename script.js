@@ -7,11 +7,12 @@ const statusEl = document.getElementById("form-status");
 const submitBtn = document.getElementById("submit-btn");
 const thanksMessage = document.getElementById("thanks-message");
 
-const otherSchoolCheck = document.getElementById("other-school-check");
+const schoolSelect = document.getElementById("school-select");
 const otherSchoolText = document.getElementById("other-school-text");
-otherSchoolCheck.addEventListener("change", () => {
-  otherSchoolText.disabled = !otherSchoolCheck.checked;
-  if (!otherSchoolCheck.checked) otherSchoolText.value = "";
+schoolSelect.addEventListener("change", () => {
+  const isOther = schoolSelect.value === "אחר";
+  otherSchoolText.classList.toggle("hidden", !isOther);
+  if (!isOther) otherSchoolText.value = "";
 });
 
 const otherStatementCheck = document.getElementById("other-statement-check");

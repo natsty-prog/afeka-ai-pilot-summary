@@ -26,10 +26,6 @@
   </div>
 </header>
 
-<div class="lab-banner">
-  <img src="assets/lab-banner.jpg" alt="מעבדת AI באפקה">
-</div>
-
 <section class="stats-strip">
   <div class="stat-box">
     <span class="stat-num">28</span>
@@ -58,10 +54,6 @@
       האקדמיות: 13 חלוצים מהמחזור הראשון (סמסטר א') ו-15 חברי סגל חדשים שהצטרפתם במחזור השני (סמסטר ב'),
       יצרתם בהשתתפותכם הפעילה (בסדנאות ובמפגשי המליאה ויישום בכיתות), את קהילת החדשנות הפדגוגית הראשונה
       באפקה.
-    </p>
-    <p>
-      כבר עכשיו אנו זוכים לראות התחלה של תוצרים ממגוון של פרויקטים מעוררי השראה שהחלו להיבנות. להלן מספר
-      סיפורי הצלחה שלכם - חברי הקהילה - משני מחזורי הפיילוט:
     </p>
   </section>
 
@@ -206,23 +198,21 @@
 
       <div class="field">
         <span>בית ספר/ יחידה</span>
-        <div class="checkbox-grid">
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסת תעשייה וניהול"><span>הנדסת תעשייה וניהול</span></label>
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסת חשמל"><span>הנדסת חשמל</span></label>
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסה רפואית"><span>הנדסה רפואית</span></label>
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסה מכנית"><span>הנדסה מכנית</span></label>
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסת תוכנה"><span>הנדסת תוכנה</span></label>
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="מדעי המחשב"><span>מדעי המחשב</span></label>
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="היחידה למתמטיקה"><span>היחידה למתמטיקה</span></label>
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="היחידה לפיזיקה"><span>היחידה לפיזיקה</span></label>
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="היחידה ללימודי אנגלית"><span>היחידה ללימודי אנגלית</span></label>
-          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="היחידה ללימודים כלליים"><span>היחידה ללימודים כלליים</span></label>
-        </div>
-        <label class="field checkbox-other">
-          <input type="checkbox" id="other-school-check" name="בית ספר יחידה" value="אחר">
-          <span>אחר:</span>
-          <input type="text" name="בית ספר יחידה - אחר" id="other-school-text" class="other-text" disabled>
-        </label>
+        <select name="בית ספר יחידה" id="school-select" required>
+          <option value="" disabled selected>בחר/י אפשרות</option>
+          <option value="הנדסת תעשייה וניהול">הנדסת תעשייה וניהול</option>
+          <option value="הנדסת חשמל">הנדסת חשמל</option>
+          <option value="הנדסה רפואית">הנדסה רפואית</option>
+          <option value="הנדסה מכנית">הנדסה מכנית</option>
+          <option value="הנדסת תוכנה">הנדסת תוכנה</option>
+          <option value="מדעי המחשב">מדעי המחשב</option>
+          <option value="היחידה למתמטיקה">היחידה למתמטיקה</option>
+          <option value="היחידה לפיזיקה">היחידה לפיזיקה</option>
+          <option value="היחידה ללימודי אנגלית">היחידה ללימודי אנגלית</option>
+          <option value="היחידה ללימודים כלליים">היחידה ללימודים כלליים</option>
+          <option value="אחר">אחר</option>
+        </select>
+        <input type="text" name="בית ספר יחידה - אחר" id="other-school-text" class="other-text hidden" placeholder="פרט/י">
       </div>
 
       <div class="field">
