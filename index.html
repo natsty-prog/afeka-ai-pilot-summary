@@ -162,12 +162,181 @@
   <section class="feedback-cta">
     <p class="feedback-kicker">לפני שממשיכים הלאה</p>
     <p class="feedback-line">חלק בלתי נפרד מהגמול הוא מילוי שאלון המשוב - עד <span class="deadline-inline">12.7.2026</span></p>
-    <a class="feedback-btn" href="https://docs.google.com/forms/d/1jZ8ryCUBQCHtp72V5ePr4QzaF7AO7i58vJA9XeAsuXw/viewform" target="_blank" rel="noopener">
-      📝 למילוי שאלון המשוב
-    </a>
+  </section>
+
+  <form id="feedback-form" class="card">
+
+    <fieldset class="section">
+      <legend>חלק א' - בקצרה עלי</legend>
+
+      <label class="field">
+        <span>שם פרטי ומשפחה</span>
+        <input type="text" name="שם פרטי ומשפחה" required>
+      </label>
+
+      <div class="field">
+        <span>בית ספר/ יחידה</span>
+        <div class="checkbox-grid">
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסת תעשייה וניהול"><span>הנדסת תעשייה וניהול</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסת חשמל"><span>הנדסת חשמל</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסה רפואית"><span>הנדסה רפואית</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסה מכנית"><span>הנדסה מכנית</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="הנדסת תוכנה"><span>הנדסת תוכנה</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="מדעי המחשב"><span>מדעי המחשב</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="היחידה למתמטיקה"><span>היחידה למתמטיקה</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="היחידה לפיזיקה"><span>היחידה לפיזיקה</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="היחידה ללימודי אנגלית"><span>היחידה ללימודי אנגלית</span></label>
+          <label class="checkbox-item"><input type="checkbox" name="בית ספר יחידה" value="היחידה ללימודים כלליים"><span>היחידה ללימודים כלליים</span></label>
+        </div>
+        <label class="field checkbox-other">
+          <input type="checkbox" id="other-school-check" name="בית ספר יחידה" value="אחר">
+          <span>אחר:</span>
+          <input type="text" name="בית ספר יחידה - אחר" id="other-school-text" class="other-text" disabled>
+        </label>
+      </div>
+
+      <div class="field">
+        <span>השתתפותך בפיילוט</span>
+        <div class="radio-toggle">
+          <label class="radio-pill">
+            <input type="radio" name="השתתפות בפיילוט" value="המשכתי בפיילוט מסמסטר א'" required>
+            <span>המשכתי בפיילוט מסמסטר א'</span>
+          </label>
+          <label class="radio-pill">
+            <input type="radio" name="השתתפות בפיילוט" value="הצטרפתי לפיילוט בסמסטר ב'" required>
+            <span>הצטרפתי לפיילוט בסמסטר ב'</span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="section">
+      <legend>חלק ב' - הפיילוט עצמו</legend>
+
+      <div class="field">
+        <span>בחרו <u>בהיגד המתאים ביותר</u> לכם בפיילוט</span>
+        <div class="stacked-radio">
+          <label class="stacked-radio-item">
+            <input type="radio" name="היגד מתאים" value="שיפרתי ו/או הרחבתי יחידת לימוד שבניתי בעבר" required>
+            <span>שיפרתי ו/או הרחבתי יחידת לימוד שבניתי בעבר</span>
+          </label>
+          <label class="stacked-radio-item">
+            <input type="radio" name="היגד מתאים" value="התנסיתי ביישום פעולות למידה עצמאית בכיתה" required>
+            <span>התנסיתי ביישום פעולות למידה עצמאית בכיתה</span>
+          </label>
+          <label class="stacked-radio-item">
+            <input type="radio" name="היגד מתאים" value="בניתי יחידת לימוד, עדיין לא יישמתי בכיתה" required>
+            <span>בניתי יחידת לימוד, עדיין לא יישמתי בכיתה</span>
+          </label>
+          <label class="stacked-radio-item">
+            <input type="radio" name="היגד מתאים" value="בניתי יחידת לימוד, יישמתי רק את חלקה בכיתה" required>
+            <span>בניתי יחידת לימוד, יישמתי רק את חלקה בכיתה</span>
+          </label>
+          <label class="stacked-radio-item checkbox-other">
+            <input type="radio" name="היגד מתאים" value="אחר" id="other-statement-check">
+            <span>אחר:</span>
+            <input type="text" name="היגד מתאים - אחר" id="other-statement-text" class="other-text" disabled>
+          </label>
+        </div>
+      </div>
+
+      <!-- TODO: הניסוח המלא של 4 ההיגדים הבאים נחתך בצילום המסך שהתקבל - יש להשלים אותו כאן לפני שימוש בטופס -->
+      <div class="field">
+        <span>סמנו את מידת הסכמתכם להיגדים הבאים (1 = בכלל לא מסכים | 5 = מסכים מאוד)</span>
+        <div class="likert-table">
+          <div class="likert-row likert-header">
+            <span class="likert-label"></span>
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+          </div>
+          <div class="likert-row">
+            <span class="likert-label">TODO: השלימו את נוסח ההיגד המלא (מוצג בטופס המקורי כ"...בי בקורסים שלי")</span>
+            <label><input type="radio" name="היגד1_כלים בקורסים" value="1" required></label>
+            <label><input type="radio" name="היגד1_כלים בקורסים" value="2"></label>
+            <label><input type="radio" name="היגד1_כלים בקורסים" value="3"></label>
+            <label><input type="radio" name="היגד1_כלים בקורסים" value="4"></label>
+            <label><input type="radio" name="היגד1_כלים בקורסים" value="5"></label>
+          </div>
+          <div class="likert-row">
+            <span class="likert-label">TODO: השלימו את נוסח ההיגד המלא (מוצג בטופס המקורי כ"...ים היו שימושיים")</span>
+            <label><input type="radio" name="היגד2_שימושיים" value="1" required></label>
+            <label><input type="radio" name="היגד2_שימושיים" value="2"></label>
+            <label><input type="radio" name="היגד2_שימושיים" value="3"></label>
+            <label><input type="radio" name="היגד2_שימושיים" value="4"></label>
+            <label><input type="radio" name="היגד2_שימושיים" value="5"></label>
+          </div>
+          <div class="likert-row">
+            <span class="likert-label">TODO: השלימו את נוסח ההיגד המלא (מוצג בטופס המקורי כ"...עמיתים תרמו לי")</span>
+            <label><input type="radio" name="היגד3_עמיתים" value="1" required></label>
+            <label><input type="radio" name="היגד3_עמיתים" value="2"></label>
+            <label><input type="radio" name="היגד3_עמיתים" value="3"></label>
+            <label><input type="radio" name="היגד3_עמיתים" value="4"></label>
+            <label><input type="radio" name="היגד3_עמיתים" value="5"></label>
+          </div>
+          <div class="likert-row">
+            <span class="likert-label">TODO: השלימו את נוסח ההיגד המלא (מוצג בטופס המקורי כ"... הצטרף לפיילוט")</span>
+            <label><input type="radio" name="היגד4_הצטרפות" value="1" required></label>
+            <label><input type="radio" name="היגד4_הצטרפות" value="2"></label>
+            <label><input type="radio" name="היגד4_הצטרפות" value="3"></label>
+            <label><input type="radio" name="היגד4_הצטרפות" value="4"></label>
+            <label><input type="radio" name="היגד4_הצטרפות" value="5"></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- TODO: הניסוח המלא של ההיגד הבא (וכותרת הטבלה) נחתך בצילום המסך - יש להשלים -->
+      <div class="field">
+        <span>סמנו את מידת הסכמתכם להיגדים הבאים (1 = בכלל לא מסכים | 5 = מסכים מאוד)</span>
+        <div class="likert-table">
+          <div class="likert-row likert-header">
+            <span class="likert-label">TODO: כותרת הטבלה (מוצג בטופס המקורי כ"...תנסות בכיתה", כנראה "ההתנסות בכיתה")</span>
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+          </div>
+          <div class="likert-row">
+            <span class="likert-label">TODO: השלימו את נוסח ההיגד המלא (מוצג בטופס המקורי כ"...נטים ללמידה")</span>
+            <label><input type="radio" name="היגד5_התנסות בכיתה" value="1" required></label>
+            <label><input type="radio" name="היגד5_התנסות בכיתה" value="2"></label>
+            <label><input type="radio" name="היגד5_התנסות בכיתה" value="3"></label>
+            <label><input type="radio" name="היגד5_התנסות בכיתה" value="4"></label>
+            <label><input type="radio" name="היגד5_התנסות בכיתה" value="5"></label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="section">
+      <legend>חלק ג' - רפלקציה</legend>
+      <p class="hint">אנא התייחסו להצלחות ולאתגרים שבדרך</p>
+
+      <label class="field">
+        <span>בחירת היחידה וההתנסות: תאר/י בקצרה איזו יחידה בחרת, איך מהתרשמותך הסטודנטים חוו את השינוי? מה היו התובנות שלהם - ציינו מה עבד, מה פחות ומה כשל?</span>
+        <textarea name="בחירת היחידה וההתנסות" rows="4" required></textarea>
+      </label>
+
+      <label class="field">
+        <span>האם שיניתם את אופן ההערכה בהתאם למשימה?</span>
+        <textarea name="שינוי אופן ההערכה" rows="3" required></textarea>
+      </label>
+
+      <label class="field">
+        <span>ציין/י צורך נוסף שתרצה/י לקבל מענה עליו (סדנה/קורס/ליווי/הכוונה נקודתית בנושא כלשהו).</span>
+        <textarea name="צורך נוסף" rows="3" required></textarea>
+      </label>
+    </fieldset>
+
+    <div class="submit-row">
+      <button type="submit" id="submit-btn">שליחת המשוב</button>
+      <p id="form-status" class="form-status"></p>
+    </div>
+  </form>
+
+  <section class="thanks card hidden" id="thanks-message">
+    <h2>תודה רבה!</h2>
+    <p>המשוב שלך יעזור לנו לפתח את הפיילוט הלאה. תודה על הדרך שעשינו יחד.</p>
   </section>
 
 </main>
+
+<script src="script.js"></script>
 
 <footer class="site-footer">
   <p>המרכז לקידום ההוראה &nbsp;•&nbsp; אפקה - המכללה האקדמית להנדסה בתל אביב</p>
