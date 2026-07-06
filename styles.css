@@ -140,22 +140,6 @@ body {
   font-size: 1.3rem;
 }
 
-.section-title {
-  margin: 0 0 16px;
-  color: var(--green-deep);
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--cream);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.title-icon {
-  font-size: 1.15rem;
-}
-
 .title-underline {
   display: block;
   width: 48px;
@@ -179,131 +163,12 @@ body {
   margin-inline-end: 8px;
 }
 
-.stories-list {
-  margin: 0;
-  padding-inline-start: 22px;
-}
-
-.stories-list li {
-  margin-bottom: 12px;
-}
-
-.story-name {
+.deadline-inline {
   font-weight: 700;
-  color: var(--green-deep);
-}
-
-.story-dept {
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
-.highlight {
-  background: #f2fbf6;
-  border: 1px solid #cdeedd;
-}
-
-.sub-note {
-  display: inline-block;
-  background: var(--gold);
-  color: var(--ink);
-  font-weight: 700;
-  padding: 4px 14px;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  margin: 0 0 16px;
-}
-
-.req-list {
-  padding-inline-start: 22px;
-  margin: 0 0 16px;
-}
-
-.req-list > li {
-  margin-bottom: 14px;
-}
-
-.sub-list {
-  margin: 8px 0 0;
-  padding-inline-start: 20px;
-}
-
-.sub-list li {
-  margin-bottom: 4px;
-  color: var(--muted);
-}
-
-.dates, .deadline, .deadline-inline {
-  font-weight: 700;
-  color: var(--green-deep);
   background: #e3f7ec;
   padding: 1px 8px;
   border-radius: 6px;
   white-space: nowrap;
-}
-
-.final-deadline {
-  background: #fff8e6;
-  border-inline-start: 4px solid var(--gold);
-  padding: 12px 16px;
-  border-radius: 8px;
-}
-
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-}
-
-.topic-list {
-  padding-inline-start: 20px;
-  margin: 0;
-}
-
-.topic-list li {
-  margin-bottom: 12px;
-}
-
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.tool-card {
-  background: var(--cream);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 18px;
-  border-inline-start: 4px solid var(--green);
-  transition: transform 0.15s, box-shadow 0.15s;
-}
-
-.tool-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(12, 90, 75, 0.12);
-}
-
-.tool-card h3 {
-  margin: 0 0 8px;
-  color: var(--green-deep);
-  font-size: 1.02rem;
-}
-
-.tool-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.94rem;
-}
-
-.closing {
-  border-inline-start: 4px solid var(--green);
-}
-
-.signoff {
-  color: var(--green-deep);
-  font-weight: 500;
 }
 
 .feedback-cta {
@@ -594,7 +459,6 @@ select { margin-bottom: 8px; }
 
 @media (max-width: 650px) {
   .card { padding: 22px 16px; }
-  .two-col { grid-template-columns: 1fr; gap: 20px; }
   .likert-row { grid-template-columns: 1fr repeat(5, 32px); font-size: 0.85rem; }
   .hero-inner { flex-direction: column; }
   .hero-visual { max-width: 220px; order: -1; }
