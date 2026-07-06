@@ -112,21 +112,6 @@ body {
   margin-bottom: 24px;
 }
 
-.intro h2 {
-  margin-top: 0;
-  color: var(--green-deep);
-  font-size: 1.3rem;
-}
-
-.title-underline {
-  display: block;
-  width: 48px;
-  height: 4px;
-  background: var(--green);
-  border-radius: 2px;
-  margin-top: 10px;
-}
-
 .legend-badge {
   display: inline-flex;
   align-items: center;
@@ -158,16 +143,8 @@ body {
   margin-bottom: 32px;
 }
 
-.feedback-kicker {
-  margin: 0 0 4px;
-  font-weight: 600;
-  color: var(--gold);
-  font-size: 0.9rem;
-  letter-spacing: 0.03em;
-}
-
 .feedback-line {
-  margin: 0 0 18px;
+  margin: 0;
   font-size: 1.05rem;
   font-weight: 500;
 }
