@@ -447,6 +447,11 @@ textarea { resize: vertical; }
   accent-color: var(--green);
 }
 
+.not-yet-option {
+  padding: 12px 14px;
+  background: var(--cream);
+}
+
 .submit-row {
   text-align: center;
   padding-top: 8px;
