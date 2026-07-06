@@ -31,10 +31,33 @@ body {
 .hero-inner {
   max-width: 980px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .hero-text {
+  flex: 1.1;
+  min-width: 260px;
   text-align: right;
+}
+
+.hero-visual {
+  flex: 1;
+  min-width: 220px;
+  max-width: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 3.1 / 1;
+}
+
+.hero-robot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 .logo {
@@ -415,6 +438,8 @@ select { margin-bottom: 8px; }
 @media (max-width: 650px) {
   .card { padding: 22px 16px; }
   .likert-row { grid-template-columns: 1fr repeat(5, 32px); font-size: 0.85rem; }
+  .hero-inner { flex-direction: column; }
+  .hero-visual { max-width: 240px; aspect-ratio: 16 / 9; order: -1; }
   .stats-strip { grid-template-columns: repeat(2, 1fr); margin-top: -20px; }
   .stat-num { font-size: 1.5rem; }
 }
