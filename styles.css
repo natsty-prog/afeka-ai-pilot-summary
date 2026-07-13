@@ -171,6 +171,11 @@ body {
   font-weight: 500;
 }
 
+.feedback-closed {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
 .deadline-inline {
   background: rgba(255, 255, 255, 0.18);
   color: #fff;
